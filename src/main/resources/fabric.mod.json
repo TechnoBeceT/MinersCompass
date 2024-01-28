@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "miners-compass",
+  "version": "${version}",
+  "name": "Miner's Compass",
+  "description": "The Miner's Compass is an innovative tool designed for the savvy Minecraft miner. With its unique functionality, this compass is not just a direction finder but a game-changer in your mining adventures.",
+  "authors": [
+    "TechnoBeceT"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/miners-compass",
+    "sources": "https://github.com/TechnoBeceT/MinersCompass"
+  },
+  "license": "MIT",
+  "icon": "assets/miners-compass/icon.gif",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.technobecet.minerscompass.MinersCompassMod"
+    ],
+    "client": [
+      "com.technobecet.minerscompass.MinersCompassModClient"
+    ],
+    "fabric-datagen": [
+      "com.technobecet.minerscompass.MinersCompassModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "miners-compass.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.24",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "item.miners-compass.ore_compass": "Ore Compass",
+  "item.miners-compass.ore_compass.removed_block": "%s removed from the list.",
+  "item.miners-compass.ore_compass.added_block": "%s added to the list.",
+  "item.miners-compass.ore_compass.not_valuable": "%s is not a valuable ore.",
+  "item.miners-compass.ore_compass.max_blocks": "Max blocks reached!",
+  "item.miners-compass.ore_compass.cleared_blocks": "Cleared all blocks.",
+  "item.miners-compass.ore_compass.no_blocks": "No blocks selected.",
+  "tooltip.miners-compass.ore_compass.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.miners-compass.ore_compass.hint": "Use the compass to search again!",
+  "tooltip.miners-compass.ore_compass.locked_on": "%s is nearby!",
+  "tooltip.miners-compass.ore_compass.wrong_dim1": "The tracked %s",
+  "tooltip.miners-compass.ore_compass.wrong_dim2": "is in another dimension!",
+  "tooltip.miners-compass.ore_compass.not_found": "Locating...",
+  "tooltip.miners-compass.ore_compass.no_ores": "No ores selected.",
+  "tooltip.miners-compass.ore_compass.selected_blocks": "Selected Blocks:"
+}

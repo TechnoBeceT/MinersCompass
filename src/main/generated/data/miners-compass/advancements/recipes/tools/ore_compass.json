@@ -1,0 +1,113 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_diamond_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_emerald_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:emerald_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_gold_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_scrap": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_scrap"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_recovery_compass": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:recovery_compass"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_redstone_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:redstone_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ore_compass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_block",
+      "has_redstone_block",
+      "has_emerald_block",
+      "has_netherite_scrap",
+      "has_recovery_compass",
+      "has_diamond",
+      "has_diamond_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ore_compass"
+    ]
+  },
+  "sends_telemetry_event": false
+}
