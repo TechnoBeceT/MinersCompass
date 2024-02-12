@@ -26,8 +26,7 @@ copper, diamond, iron, lapis, redstone, emerald ores, and nether quartz ore.
 
 ### Extendable Ore List
 
-Enhance the compass's capabilities by creating a datapack with *
-*_data/miners-compass/tags/blocks/ore_compass_detectable_blocks.json_** file, allowing the addition of more ores for
+Enhance the compass's capabilities by creating a datapack with **_data/miners-compass/tags/blocks/ore_compass_detectable_blocks.json_** file, allowing the addition of more ores for
 detection.
 
 ### Smart Memory Management
