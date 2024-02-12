@@ -84,3 +84,6 @@ No, I mainly play Fabric.
 ### Curse Forge?
 
 Nope, Modrinth is the reason i did start publishing my mods.
+
+### Y-Axis Direction?
+For those interested in knowing the Y-axis direction, I highly recommend using [Compass3D](https://modrinth.com/mod/compass3d), developed by [AdamRaichu](https://modrinth.com/user/AdamRaichu). My gratitude goes out to him for integrating support for this feature into the mod.
