@@ -3,7 +3,7 @@
   "id": "miners-compass",
   "version": "${version}",
   "name": "Miner's Compass",
-  "description": "The Miner's Compass is an innovative tool designed for the savvy Minecraft miner. With its unique functionality, this compass is not just a direction finder but a game-changer in your mining adventures.",
+  "description": "The ultimate mining companion with automatic modded ore detection. Find ores from ANY mod with intelligent grouping, modern GUI, and powerful configuration options. Perfect for vanilla and modded gameplay!",
   "authors": [
     "TechnoBeceT"
   ],

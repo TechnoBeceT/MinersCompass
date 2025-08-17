@@ -2,6 +2,10 @@ package com.technobecet.minerscompass;
 
 import com.technobecet.minerscompass.config.ModConfig;
 import com.technobecet.minerscompass.item.ModItems;
+import com.technobecet.minerscompass.networking.NetworkHandler;
+import com.technobecet.minerscompass.util.CustomOreTypeConfig;
+import com.technobecet.minerscompass.util.DynamicOreDetection;
+import com.technobecet.minerscompass.util.OreTypeManager;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
@@ -17,7 +21,13 @@ public class MinersCompassMod implements ModInitializer {
     public void onInitialize() {
         AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
         config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        
         ModItems.registerModItems();
+        NetworkHandler.registerServerPackets();
+        
+        if (config.enableAutoDiscovery) {
+            LOGGER.info("Dynamic ore detection system will initialize when world loads");
+            // Note: Actual initialization happens in OreTypeManager.initialize() when first accessed
+        }
     }
 }

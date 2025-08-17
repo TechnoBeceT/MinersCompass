@@ -1,0 +1,71 @@
+{
+  // How many chunks around the player to search for ores (0-100)
+  // Higher values = larger search area but may impact performance
+  "chunkRadius": 3,
+
+  // Maximum number of ore types that can be selected at once (0-20)
+  // Lower values = better performance, higher values = more flexibility
+  "maxBlocks": 8,
+
+  // Enable automatic detection of modded ores
+  // Set to false to only use manually defined ore types
+  "enableAutoDiscovery": true,
+
+  // Group similar ore variants together (e.g., coal_ore + deepslate_coal_ore = "Coal Ore")
+  // Set to false to treat each ore block as separate
+  "groupSimilarOres": true,
+
+  // Minimum block hardness required for ore detection (0.0-50.0)
+  // Higher values filter out softer decorative blocks
+  "minimumHardness": 1.0,
+
+  // Additional keywords to help detect ores that might be missed
+  // Add terms commonly used in mod ore names
+  "additionalOreKeywords": [
+    "gem",
+    "crystal",
+    "ingot",
+    "core",
+    "debris"
+  ],
+
+  // Exclude entire mods from ore detection
+  // Add mod IDs to ignore all blocks from those mods
+  "excludedMods": [
+    "decorative_blocks",
+    "chisel"
+  ],
+
+  // Add custom ore types that aren't detected automatically
+  // Format: "oreName:COLOR:blockId1,blockId2,blockId3"
+  // Available colors: WHITE, YELLOW, GOLD, RED, DARK_RED, GREEN, DARK_GREEN,
+  //                   AQUA, DARK_AQUA, BLUE, DARK_BLUE, LIGHT_PURPLE, DARK_PURPLE,
+  //                   GRAY, DARK_GRAY, BLACK
+  "customOreTypes": [
+    // Example: "vibranium:LIGHT_PURPLE:somemod:vibranium_ore,somemod:vibranium_deepslate_ore"
+  ],
+
+  // Force include specific blocks that should be treated as ores
+  // Use this for blocks that aren't detected automatically
+  "forceIncludeBlocks": [
+    // Example: "minecraft:example_ore"
+  ],
+
+  // Exclude entire ore types from detection (removes all variants)
+  // Use ore type names to hide specific ore categories completely
+  // Available types: coal, iron, gold, diamond, emerald, copper, lapis, redstone, quartz,
+  // netherite, zinc, adamantite, aquarium, banglum, carmot, kyber, manganese, morkite,
+  // midas_gold, mythril, orichalcum, osmium, palladium, platinum, prometheum, runite,
+  // silver, starrite, stormyx, tin, unobtainium, moonstone, blue_skies_moonstone, verglas,
+  // aquite, charoite, diopside, pyrope, falsite, horizonite, ventium, sulfur, salt, onyx,
+  // gleaming, tigers_eye, crystalline, aluminum, lead, nickel, uranium, and others
+  "excludedOreTypes": [
+    // Example: "coal", "zinc", "aluminum"
+  ],
+
+  // Exclude specific ore blocks while keeping the ore type
+  // Use this for fine-grained control (e.g., exclude surface ores but keep deepslate)
+  "excludedBlocks": [
+    // Examples: "minecraft:coal_ore", "create:zinc_ore"
+  ]
+}
